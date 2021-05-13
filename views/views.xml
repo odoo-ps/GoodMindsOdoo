@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="royalties.list">
+      <field name="name">royalties list</field>
+      <field name="model">royalties.royalties</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="royalties.action_window">
+      <field name="name">royalties window</field>
+      <field name="res_model">royalties.royalties</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="royalties.action_server">
+      <field name="name">royalties server</field>
+      <field name="model_id" ref="model_royalties_royalties"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="royalties" id="royalties.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="royalties.menu_1" parent="royalties.menu_root"/>
+    <menuitem name="Menu 2" id="royalties.menu_2" parent="royalties.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="royalties.menu_1_list" parent="royalties.menu_1"
+              action="royalties.action_window"/>
+    <menuitem name="Server to list" id="royalties" parent="royalties.menu_2"
+              action="royalties.action_server"/>
+-->
+  </data>
+</odoo>

@@ -1,1 +1,2 @@
 # GoodMindsOdoo
+Test Royalties App
